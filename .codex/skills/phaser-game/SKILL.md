@@ -40,6 +40,7 @@ The current app uses plain browser ES modules with a lightweight structure:
 - `src/main.js` creates the Phaser game and registers the service worker.
 - `src/scenes/` contains scene classes.
 - `src/game/` contains reusable game object classes.
+- `assets/` contains icons for the PWA application.
 - `sw.js` and `manifest.webmanifest` provide PWA behavior.
 
 Preserve this structure unless the user asks for a larger reorganization.

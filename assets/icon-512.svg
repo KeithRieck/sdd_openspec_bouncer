@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Bouncing Circles icon">
+  <rect width="512" height="512" rx="96" fill="#111111"/>
+  <circle cx="164" cy="176" r="92" fill="#8ecae6"/>
+  <circle cx="344" cy="194" r="64" fill="#219ebc"/>
+  <circle cx="282" cy="340" r="120" fill="#ffb703"/>
+  <circle cx="140" cy="366" r="52" fill="#fb8500"/>
+</svg>
