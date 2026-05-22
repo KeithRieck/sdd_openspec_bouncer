@@ -26,25 +26,6 @@ In a previous project I created specification in the file [`spec-v001.md`](spec-
   * Code should be reviewed at this point.  Problems could be either fixed manually or you could tell Codes what to correct.
   * Everything is commited to a 'master' branch.  It all gets published to Github and I configure Github Pages to host the app.
 
-```mermaid
-classDiagram
-    class Phaser.Physics.Arcade.Sprite {
-      <<framework>>
-    }
-
-    class Bouncer {
-      +speed: number
-      +radius: number
-    }
-
-    class Circle {
-      +color: number
-      +diameter: number
-    }
-
-    Phaser.Physics.Arcade.Sprite <|-- Bouncer
-    Bouncer <|-- Circle
-```
 
 ## Second Iteration
 
@@ -57,6 +38,9 @@ classDiagram
 3. I tell Codes that this should be a new change, so new documents are created.
 4. All documents deserve to be reviewed before implementing them.
 5. From within Codex, execute `Openspec Apply Change`
+  * Code is generated.  I test it locally and it works. 
+  * Code should be reviewed at this point. 
+  * I merge the `small_circles` branch into the `master` branch and publish it up to Github.
 
 
 ## References:

@@ -13,6 +13,10 @@ export class Bouncer extends Phaser.Physics.Arcade.Sprite {
     return this._radius;
   }
 
+  get mass() {
+    return this.constructor.MASS ?? 1;
+  }
+
   initializeBody() {
     this.scene.add.existing(this);
     this.scene.physics.add.existing(this);
