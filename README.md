@@ -55,3 +55,9 @@ classDiagram
 ## Second Iteration
 
 1. Create a feature branch named `small_circles`.
+
+
+## References:
+* [OpenSpec](https://openspec.pro/)
+* [OpenSpec in Github](https://github.com/Fission-AI/OpenSpec)
+* [How I Use OpenCode, Oh-My-OpenCode-Slim, and OpenSpec to Build My Own AI Coding Environment](https://www.dataleadsfuture.com/how-i-use-opencode-oh-my-opencode-slim-and-openspec-to-build-my-own-ai-coding-environment/)

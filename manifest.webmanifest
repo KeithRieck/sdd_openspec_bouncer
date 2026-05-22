@@ -1,0 +1,11 @@
+{
+  "name": "Bouncing Circles",
+  "short_name": "Circles",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "description": "A Phaser Progressive Web App showing 64 circles bouncing across the viewport.",
+  "icons": []
+}
