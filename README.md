@@ -9,17 +9,19 @@ In a previous project I created specification in the file [`spec-v001.md`](spec-
 ## First Iteration
 
 1. After installing OpenSpec and creating my project directory, 
-    * execute: `openspec init`     Specify that I'm using Codex.
-    * I add the `phaser-game` skill under `.codex/skills`.
-    * Copy in the file `spec-v001.md` which I'd created earlier with `grill-me` and `spec-writer`
-    * I update [`config.yaml`](openspec/config.yaml) to specify the Tech stack.
-2. From within Codex, execute `Openspec Propose Create a web app showing 64 circles bouncing across the page using the information in spec-v001.md and treat this as a Progressive Web Application and Phaser game using $phaser-game conventions`
+  * execute: `openspec init`     Specify that I'm using Codex.
+  * I add the `phaser-game` skill under `.codex/skills`.
+  * Copy in the file `spec-v001.md` which I'd created earlier with `grill-me` and `spec-writer`
+  * I update [`config.yaml`](openspec/config.yaml) to specify the Tech stack.
+2. From within Codes, execute `Openspec Explore`.  This goes into "explore" mode.  I indicate that I  want to "Explore an idea"
+  * `Create a web app showing 64 circles bouncing across the page using the information in spec-v001.md and treat this as a Progressive Web Application and Phaser game using $phaser-game conventions`
+3. From within Codex, execute `Openspec Propose`
     * Creates [proposal.md](openspec/changes/bouncing-circles-web-app/proposal.md)
+    * Creates [spec.md](openspec/changes/add-bouncing-circles-pwa-phaser/specs/bouncing-circles-simulation/spec.md)
     * Creates [design.md](openspec/changes/bouncing-circles-web-app/design.md)
     * Creates [tasks.md](openspec/changes/bouncing-circles-web-app/tasks.md)
-3. Review the documents and make necessary changes.
-    * At this point you could use `Openspec Explore`
-4. From within Codex, execute `Openspec Apply Change`
+4. Review the documents and make necessary changes.
+5. From within Codex, execute `Openspec Apply Change`
     * Code is generated.  I test it locally and it works. 
     * Code should be reviewed at this point.  Problems could be either fixed manually or you could tell Codes what to correct.
     * Everything is commited to a 'master' branch.  It all gets published to Github and I configure Github Pages to host the app.
