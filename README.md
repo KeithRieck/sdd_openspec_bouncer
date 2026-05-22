@@ -13,7 +13,7 @@ In a previous project I created specification in the file [`spec-v001.md`](spec-
   * I add the `phaser-game` skill under `.codex/skills`.
   * Copy in the file `spec-v001.md` which I'd created earlier with `grill-me` and `spec-writer`
   * I update [`config.yaml`](openspec/config.yaml) to specify the Tech stack.
-2. From within Codes, execute `Openspec Explore`.  This goes into "explore" mode.  I indicate that I  want to "Explore an idea"
+2. From within Codes, execute `Openspec Explore`.  This goes into "explore" mode.  I indicate that I  want to "Explore an idea".  Within this chat, tell Codex what we want.
   * `Create a web app showing 64 circles bouncing across the page using the information in spec-v001.md and treat this as a Progressive Web Application and Phaser game using $phaser-game conventions`
 3. From within Codex, execute `Openspec Propose`
     * Creates [proposal.md](openspec/changes/bouncing-circles-web-app/proposal.md)
@@ -28,33 +28,29 @@ In a previous project I created specification in the file [`spec-v001.md`](spec-
 
 ```mermaid
 classDiagram
-    class Phaser.Physics.Arcade.Image {
-      +body
-      +setVelocity(x, y)
-      +setDisplaySize(width, height)
-      +setTint(color)
-      +setCircle(radius)
-      +setCollideWorldBounds(value)
-      +setBounce(x, y)
-      +setDrag(x, y)
+    class Phaser.Physics.Arcade.Sprite {
+      <<framework>>
     }
 
     class Bouncer {
-      +normalizeSpeed()
-      +clampToBounds(width, height)
+      +speed: number
+      +radius: number
     }
 
     class Circle {
-      +constructor(scene, x, y, textureKey, tint)
+      +color: number
+      +diameter: number
     }
 
-    Phaser.Physics.Arcade.Image <|-- Bouncer
+    Phaser.Physics.Arcade.Sprite <|-- Bouncer
     Bouncer <|-- Circle
 ```
 
 ## Second Iteration
 
 1. Create a feature branch named `small_circles`.
+2. In Codex, start the Explore mode again.
+* 
 
 
 ## References:
