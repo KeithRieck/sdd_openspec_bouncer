@@ -25,7 +25,11 @@ The project is a web app built as a Phaser game. The intended behavior is a full
 - Randomness SHALL be unseeded by default.
 - On very small viewports, initial placement uses best-effort non-overlap with capped retries.
 - Circles SHALL remain fully visible (center clamped to at least 25px from each edge).
-- Unknown browser support matrix is [NEEDS_INPUT:browser_support_matrix].
+- Must support browsers at or later than the following versions:
+    - Chrome version 94
+    - Edge version 94
+    - Firefox version 93
+    - Safari version 14
 
 ## Acceptance Criteria
 1. WHEN the page loads, THEN the system SHALL automatically start the simulation with exactly 64 circles in motion.

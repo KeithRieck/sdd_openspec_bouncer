@@ -63,6 +63,7 @@ Preserve this structure unless the user asks for a larger reorganization.
 ## PWA expectations
 
 - Keep the manifest, service worker, and registration working.
+- Declare icons in the manifest.
 - Cache the application shell and core assets needed for repeat loads and offline use.
 - Avoid changes that silently break offline behavior, especially URL/path changes.
 - Prefer project-local assets when practical. If an external dependency is necessary, make sure the offline story is still reasonable.
