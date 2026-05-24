@@ -43,6 +43,12 @@ In a previous project I created specification in the file [`spec-v001.md`](spec-
   * I merge the `small_circles` branch into the `master` branch and publish it up to Github.
 
 
+## Third Iteration
+
+1. Create a feature branch named `animated_sprite`.
+2. I add a spritesheet file and it's corresponding JSON hash file into the `assets` directory.
+3. 
+
 ## References:
 * [OpenSpec](https://openspec.pro/)
 * [OpenSpec in Github](https://github.com/Fission-AI/OpenSpec)
