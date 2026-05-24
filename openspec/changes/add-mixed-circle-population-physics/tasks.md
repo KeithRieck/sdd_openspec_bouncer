@@ -25,5 +25,5 @@
 ## 5. Validation and Acceptance
 
 - [x] 5.1 Validate mixed population counts and class-specific sizes/speeds at startup.
-- [ ] 5.2 Validate visual constraints: `Circle` colors appear pastel and `SmallCircle` colors appear saturated.
-- [ ] 5.3 Validate mass-weighted collisions qualitatively show heavier `Circle` and lighter `SmallCircle` response differences without post-collision speed locking.
+- [x] 5.2 Validate visual constraints: `Circle` colors appear pastel and `SmallCircle` colors appear saturated.
+- [x] 5.3 Validate mass-weighted collisions qualitatively show heavier `Circle` and lighter `SmallCircle` response differences without post-collision speed locking.

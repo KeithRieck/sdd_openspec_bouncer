@@ -35,7 +35,7 @@ In a previous project I created specification in the file [`spec-v001.md`](spec-
   * `Make a new class called SmallCircle.  It should extend either Bouncer or Circle, whichever makes more sense.  For SmallCircle, the diameter should be 25 pixels and the speed should be 200 pixels per second.  They should all have random colors but the colors should be saturated.`
   * `The simulation should also have 32 SmallCircles bouncing around the page.`
   * `For collisions implement a custom resolver where a Circle has four times the mass as a SmallCircle.
-3. I tell Codes that this should be a new change, so new documents are created.
+3. I tell Codex that this should be a new change, so new documents are created.
 4. All documents deserve to be reviewed before implementing them.
 5. From within Codex, execute `Openspec Apply Change`
   * Code is generated.  I test it locally and it works. 
@@ -47,7 +47,9 @@ In a previous project I created specification in the file [`spec-v001.md`](spec-
 
 1. Create a feature branch named `animated_sprite`.
 2. I add a spritesheet file and it's corresponding JSON hash file into the `assets` directory.
-3. 
+3. In Codex, start the Explore mode again.  I tell Codex that this will also be a new change.
+  * Add a new class named Dodecahedron that extends the Bouncer class.  This sprite should use the new spritesheet added under the assets directory.  There should be an animation on this sprite that switches to the next spritesheet image every 200 milliseconds.
+  * Each Dodecahedron should move at 50 pixels per second.  For collisions, each Dodecahedron should have twice the mass as a Circle.  Add 4 bouncing Dodecahedrons to the simulation.
 
 ## References:
 * [OpenSpec](https://openspec.pro/)
