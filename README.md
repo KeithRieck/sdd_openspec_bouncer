@@ -22,7 +22,7 @@ In a previous project I created specification in the file [`spec-v001.md`](spec-
   * Creates [tasks.md](openspec/changes/archive/2026-05-22-add-bouncing-circles-pwa-phaser/tasks.md)
 4. Review the documents and make necessary changes.
 5. From within Codex, execute `Openspec Apply Change`
-  * Code is generated.  I test it locally and it works. 
+  * Code is generated.  I test it locally and it works perfectly again. 
   * Code should be reviewed at this point.  Problems could be either fixed manually or you could tell Codes what to correct.
   * Everything is commited to a 'master' branch.  It all gets published to Github and I configure Github Pages to host the app.
 
@@ -38,7 +38,7 @@ In a previous project I created specification in the file [`spec-v001.md`](spec-
 3. I tell Codex that this should be a new change, so new documents are created.
 4. All documents deserve to be reviewed before implementing them.
 5. From within Codex, execute `Openspec Apply Change`
-  * Code is generated.  I test it locally and it works. 
+  * Code is generated.  I test it locally and it works perfectly. 
   * Code should be reviewed at this point. 
   * I merge the `small_circles` branch into the `master` branch and publish it up to Github.
 
@@ -46,10 +46,16 @@ In a previous project I created specification in the file [`spec-v001.md`](spec-
 ## Third Iteration
 
 1. Create a feature branch named `animated_sprite`.
-2. I add a spritesheet file and it's corresponding JSON hash file into the `assets` directory.
+2. I add a spritesheet file and its corresponding JSON hash file into the `assets` directory.
 3. In Codex, start the Explore mode again.  I tell Codex that this will also be a new change.
-  * Add a new class named Dodecahedron that extends the Bouncer class.  This sprite should use the new spritesheet added under the assets directory.  There should be an animation on this sprite that switches to the next spritesheet image every 200 milliseconds.
-  * Each Dodecahedron should move at 50 pixels per second.  For collisions, each Dodecahedron should have twice the mass as a Circle.  Add 4 bouncing Dodecahedrons to the simulation.
+  * `Add a new class named Dodecahedron that extends the Bouncer class.  This sprite should use the new spritesheet added under the assets directory.  There should be an animation on this sprite that switches to the next spritesheet image every 200 milliseconds.`
+  * `Each Dodecahedron should move at 50 pixels per second.  For collisions, each Dodecahedron should have twice the mass as a Circle.  Add 4 bouncing Dodecahedrons to the simulation.`
+4. Review documents.
+5. From within Codex, execute `Openspec Apply Change`
+  * Code is generated.  I test it locally and this time it fails.  Codex has picked the wrong function name for loading a spritesheet atlas.   I manually fix this.
+  * I merge the `animated_sprite` branch into the `master` branch and publish it up to Github.
+  * The hardest part about this iteration was getting Gemini to generate the spritesheet.   Also, the resulting spritesheet animation isn't as cool as I'd like and the collision boundaries on the sprite are a little too large.
+  
 
 ## References:
 * [OpenSpec](https://openspec.pro/)

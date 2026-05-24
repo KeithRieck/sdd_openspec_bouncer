@@ -5,11 +5,15 @@ const APP_SHELL = [
   "./manifest.webmanifest",
   "./assets/icon-192.svg",
   "./assets/icon-512.svg",
+  "./assets/spritesheet.png",
+  "./assets/spritesheet.json",
   "./src/main.js",
   "./src/scenes/BootScene.js",
   "./src/scenes/PlayScene.js",
   "./src/game/Bouncer.js",
-  "./src/game/Circle.js"
+  "./src/game/Circle.js",
+  "./src/game/SmallCircle.js",
+  "./src/game/Dodecahedron.js"
 ];
 
 self.addEventListener("install", (event) => {

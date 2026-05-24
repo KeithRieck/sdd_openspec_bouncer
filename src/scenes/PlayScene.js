@@ -1,8 +1,10 @@
 import { Circle } from "../game/Circle.js";
+import { Dodecahedron } from "../game/Dodecahedron.js";
 import { SmallCircle } from "../game/SmallCircle.js";
 
 const CIRCLE_COUNT = 16;
 const SMALL_CIRCLE_COUNT = 32;
+const DODECAHEDRON_COUNT = 4;
 const MAX_SPAWN_RETRIES = 200;
 const DEFAULT_NORMAL_X = 1;
 const DEFAULT_NORMAL_Y = 0;
@@ -15,9 +17,13 @@ export class PlayScene extends Phaser.Scene {
 
   create() {
     this.physics.world.setBounds(0, 0, this.scale.width, this.scale.height);
+    if (!this.textures.exists(Dodecahedron.TEXTURE_KEY)) {
+      throw new Error("Missing dodecahedron spritesheet texture.");
+    }
 
     this.spawnEntities(Circle, CIRCLE_COUNT);
     this.spawnEntities(SmallCircle, SMALL_CIRCLE_COUNT);
+    this.spawnEntities(Dodecahedron, DODECAHEDRON_COUNT);
 
     this.physics.add.overlap(this.circles, this.circles, (a, b) => {
       if (a === b) {
