@@ -4,11 +4,11 @@
 TBD - created by archiving change add-bouncing-circles-pwa-phaser. Update Purpose after archive.
 ## Requirements
 ### Requirement: Simulation Starts With Exactly Sixty-Four Circles
-The system SHALL automatically start the simulation on page load and initialize exactly 64 circles in motion.
+The system SHALL automatically start the simulation on page load and initialize exactly 48 circles in motion, composed of 16 `Circle` entities and 32 `SmallCircle` entities.
 
 #### Scenario: Auto-start on initial load
 - **WHEN** the user opens the application page in a supported browser
-- **THEN** the simulation starts without user interaction and 64 circles are active
+- **THEN** the simulation starts without user interaction and activates the required mixed populations
 
 ### Requirement: Circle Shape and Visual Identity
 The system SHALL render each circle as a solid disc with a 50-pixel diameter and assign a random color that remains fixed for that circle during the session.
@@ -18,11 +18,11 @@ The system SHALL render each circle as a solid disc with a 50-pixel diameter and
 - **THEN** each circle is rendered as a 50-pixel solid disc and keeps its assigned color until the session ends
 
 ### Requirement: Constant Velocity Magnitude
-The system SHALL maintain every circle at 200 pixels per second by normalizing velocity after initialization and during runtime drift, including after collisions.
+The system SHALL set class-specific initial speeds at startup (100 pixels/second for `Circle`, 200 pixels/second for `SmallCircle`) and SHALL preserve mass-based post-collision results without renormalizing back to class targets.
 
-#### Scenario: Speed normalization during runtime
-- **WHEN** the simulation is running and any circle velocity drifts from magnitude 200
-- **THEN** the system adjusts that circle velocity so its magnitude returns to exactly 200 pixels per second
+#### Scenario: Speed policy during runtime
+- **WHEN** entities are initialized and later experience collisions
+- **THEN** startup speeds follow class defaults and post-collision magnitudes follow custom collision outputs without forced target-speed resets
 
 ### Requirement: Elastic Boundary and Circle Collisions
 The system SHALL resolve boundary impacts and circle-circle contacts as elastic collisions while keeping each circle fully visible within viewport bounds.
