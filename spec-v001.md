@@ -1,6 +1,6 @@
 # Project Spec
 ## Context
-The project is a web app built as a Phaser game. The intended behavior is a full-viewport simulation where 64 circles bounce continuously around the page, including boundary and circle-circle collisions. The desired implementation uses a pinned Phaser 3.x CDN script, starts automatically on load, and avoids UI overlays.
+The project is a web app built as a Phaser game. The intended behavior is a full-viewport simulation where 64 circles bounce continuously around the page, including boundary and circle-circle collisions. The desired implementation uses a pinned Phaser 4.0 CDN script, starts automatically on load, and avoids UI overlays.
 
 ## Goals
 - Deliver a browser-based Phaser game with exactly 64 circles.
@@ -21,7 +21,7 @@ The project is a web app built as a Phaser game. The intended behavior is a full
 
 ## Assumptions & Constraints
 - The app SHALL run from static files (no mandatory build step).
-- Phaser version SHALL be pinned to a specific 3.x release loaded by CDN.
+- Phaser version SHALL be pinned to a specific 4.0 release loaded by CDN.
 - Randomness SHALL be unseeded by default.
 - On very small viewports, initial placement uses best-effort non-overlap with capped retries.
 - Circles SHALL remain fully visible (center clamped to at least 25px from each edge).
@@ -42,7 +42,7 @@ The project is a web app built as a Phaser game. The intended behavior is a full
 8. WHILE the simulation is displayed, THEN the system SHALL show no HUD, buttons, labels, or other UI overlays.
 9. WHEN circles are created, THEN the system SHALL assign each circle a random color that remains fixed for that circle during the session.
 10. IF the viewport cannot fit 64 circles at 50-pixel diameter without overlap, THEN the system SHALL apply capped-retry best-effort spawning and continue simulation startup.
-11. WHERE external engine code is loaded, THEN the system SHALL load a pinned Phaser 3.x CDN version rather than a floating latest tag.
+11. WHERE external engine code is loaded, THEN the system SHALL load a pinned Phaser 4.0 CDN version rather than a floating latest tag.
 12. WHEN initial implementation files are created, THEN the system SHALL place the app entrypoint at repository root as `index.html` with one companion JavaScript module file.
 
 ## Known Gaps

@@ -5,7 +5,7 @@ This change introduces a static, browser-only Phaser application that renders a 
 ## Goals / Non-Goals
 
 **Goals:**
-- Deliver a Phaser 3.x simulation that starts automatically on page load with exactly 64 circles.
+- Deliver a Phaser 4.0 simulation that starts automatically on page load with exactly 64 circles.
 - Enforce circle invariants: 50px diameter and 200 px/s constant speed across runtime drift and collisions.
 - Implement reusable OOP movement behavior in `Bouncer` (extends Phaser sprite) and concrete `Circle` entities (extends `Bouncer`).
 - Support responsive full-viewport rendering and physics-bound updates on resize.
@@ -39,7 +39,7 @@ This change introduces a static, browser-only Phaser application that renders a 
    - Rationale: Satisfies requirement to continue startup even when perfect packing is impossible on small viewports.
    - Alternative considered: hard-fail startup if overlap-free placement fails. Rejected because it violates expected startup behavior.
 
-6. **Pinned Phaser 3.x CDN script in `index.html` plus modular local ES files**
+6. **Pinned Phaser 4.0 CDN script in `index.html` plus modular local ES files**
    - Rationale: Meets static/no-build constraint and explicit pinning requirement while preserving maintainable module structure.
    - Alternative considered: npm/bundled Phaser. Rejected by project constraints.
 

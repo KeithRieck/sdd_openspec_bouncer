@@ -1,6 +1,6 @@
 ## 1. App Shell and Phaser Bootstrap
 
-- [x] 1.1 Create/update root `index.html` to load a pinned Phaser 3.x CDN script and the ES module app entrypoint.
+- [x] 1.1 Create/update root `index.html` to load a pinned Phaser 4.0 CDN script and the ES module app entrypoint.
 - [x] 1.2 Implement `src/main.js` game bootstrap with full-viewport Phaser config, `BootScene` as first scene, and resize wiring.
 - [x] 1.3 Add/verify service worker registration in `src/main.js` using subpath-safe relative URL behavior.
 

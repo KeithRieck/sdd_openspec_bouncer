@@ -1,11 +1,11 @@
 ## ADDED Requirements
 
 ### Requirement: Pinned Phaser Runtime Source
-The system SHALL load Phaser from a pinned 3.x CDN version reference and SHALL NOT use a floating latest tag.
+The system SHALL load Phaser from a pinned 4.0 CDN version reference and SHALL NOT use a floating latest tag.
 
 #### Scenario: Engine script loading
 - **WHEN** the application HTML is loaded
-- **THEN** Phaser is requested from an explicit pinned 3.x CDN URL
+- **THEN** Phaser is requested from an explicit pinned 4.0 CDN URL
 
 ### Requirement: Modular Phaser Game Structure
 The system SHALL organize gameplay code using repository Phaser conventions with `BootScene` as the initial scene and object-oriented game entities implemented as `Bouncer` and `Circle` modules.
